@@ -21,7 +21,7 @@ This project is a basic "Hello, World!" WebSocket server and client example buil
 
 1. Clone this repository:
    ```bash
-   git clone 
+   git clone https://github.com/lunakenya/Proyect-with-WebSocket.git
    ```
 2. Install dependencies:
 ```bash
