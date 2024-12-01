@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Hola Mundo</title>
+</head>
+<body>
+    <h1>Hola Mundo con WebSocket</h1>
+    <div id="message"></div>
+
+    <script>
+        // Conectar al servidor WebSocket
+        const ws = new WebSocket('wss://https://d6eb-2800-bf0-249-1291-8944-e108-f082-4928.ngrok-free.app');
+
+        ws.onopen = () => {
+            console.log('Conexión establecida con el servidor');
+        };
+
+        ws.onmessage = (event) => {
+            document.getElementById('message').innerText = event.data;
+        };
+
+        ws.onclose = () => {
+            console.log('Conexión cerrada');
+        };
+    </script>
+</body>
+</html>
