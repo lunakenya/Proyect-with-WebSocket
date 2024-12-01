@@ -34,5 +34,6 @@ This project is a basic "Hello, World!" WebSocket server and client example buil
 node server.js
    ```
 Open the client HTML file in your browser:
+![imagen](https://github.com/user-attachments/assets/5dbc9f12-9f11-441d-9457-979d42020010)
 
 Expose the application using Ngrok:
