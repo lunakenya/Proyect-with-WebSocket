@@ -7,7 +7,7 @@ wss.on('connection', (ws) => {
     console.log('Cliente conectado');
 
     // Enviar un mensaje "Hola Mundo" al cliente
-    ws.send('Mensaje enviado  desde el servidor WebSocket');
+    ws.send('Mensaje enviado desde el servidor WebSocket');
 
     // Escuchar mensajes del cliente
     ws.on('message', (message) => {
